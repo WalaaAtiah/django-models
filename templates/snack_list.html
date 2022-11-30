@@ -1,7 +1,25 @@
 {% extends 'base.html'%}
 {%block content%}
-<h1> Things List </h1>
+<style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+<h1> Snack List </h1>
+<table>
+    <tr>
+      <th>Snacks Name</th>
+      <th>Purchaser</th>
+      <th>description</th>
+    </tr>
+  
 {%for snack in object_list%}
-    <h3> {{snack.name}}</h3>
+    <tr">
+        <td>{{snack.name}}</td>
+        <td>{{snack.purchaser}}</td>
+        <td>{{snack.description}}</td>
+    </tr>
 {%endfor%}
+</table>
 {%endblock content%}
