@@ -25,4 +25,4 @@
 **To run the tests**
     `python manage.py test`
     
-## [pull request](https://github.com/WalaaAtiah/django-models/pull/1)
+## [pull request](https://github.com/WalaaAtiah/django-models/pull/2)
