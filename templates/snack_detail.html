@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{%block content%}
+<div class="card " id="details">
+    <h1>{{snack.name}}</h1>
+    <img src={{snack.image}} alt={{snack.name}} style="width:380px ;height: 250px;">
+    <h3>purchaser : {{snack.purchaser}}</h3>
+    <h3>description : {{snack.description}}</h3>
+    
+    <button  class="_button"><a href="{% url 'snack_list' %}">back</a></button>
+</div>    
+
+
+
+
+{%endblock content%}

@@ -11,6 +11,11 @@
 
 2. **Installing Django.**
     `pip install django`
+    
+   or 
+
+   **install  requirements.txt**
+   `pip3 install -r requirements.txt`
 
 3. **To update the database**
     `python manage.py migrate`
