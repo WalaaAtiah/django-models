@@ -1,25 +1,31 @@
 {% extends 'base.html'%}
 {%block content%}
-<style>
-    table, th, td {
-      border:1px solid black;
-      border-collapse: collapse;
-    }
-    </style>
-<h1> Snack List </h1>
-<table>
-    <tr>
-      <th>Snacks Name</th>
-      <th>Purchaser</th>
-      <th>description</th>
-    </tr>
-  
-{%for snack in object_list%}
-    <tr">
-        <td>{{snack.name}}</td>
-        <td>{{snack.purchaser}}</td>
-        <td>{{snack.description}}</td>
-    </tr>
-{%endfor%}
-</table>
+
+
+<div class="row">
+  <div class="column1">
+    <h1>Snack List</h1>
+    <p>You can find many types of snacks !!</p>
+    <div class="c">
+      <table>
+          <tr>
+            <th>Snacks Name</th>
+            <th>Details</th>
+            
+          </tr>
+        
+      {%for snack in Allsnack%}
+          <tr>
+              <td>{{snack.name}}</td>
+              <td><a href="{% url 'snack_details' snack.id %}">Details</a></td>
+          </tr>
+      {%endfor%}
+      </table>
+      </div>
+    
+  </div>
+  <div class="column2">
+    <img src="../static/waffle-removebg-preview.png" alt="snack" width="650px">
+  </div>
+</div>
 {%endblock content%}
