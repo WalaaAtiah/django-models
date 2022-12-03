@@ -4,6 +4,9 @@
 
 ### Author: Walaa' Atiyh
 
+### db-sqlite relation database
+  <img src="./static/db-sqlite.png" alt="drawing" style="width:500px;"/>
+
 #### How to initialize/run your application (where applicable)
 1. **Create the venv and activate it.**
 
