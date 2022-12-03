@@ -1,4 +1,4 @@
-# LAB - Class 20
+# LAB - Class 20 and class 21
 
 ## Project: django-models
 
